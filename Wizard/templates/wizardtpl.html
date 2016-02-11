@@ -1,0 +1,173 @@
+<!-- <div class="row"> -->
+    <div id="wizard_left_container" class="left-panel" style="position:fixed;">
+    	<div class="process-step-offset">
+            <div id="process-step-container" class="process-step-container" >
+                <div class="heading"><%=getMessage('WIZARD_WELCOME_GETTING_STARTED')%></div>
+                <ul class="enscrollwrapper hasscroll">
+                   <%if(canSetupProgram){%>
+                    <li class="wizard-step active-step" id="wizard_welcome" step="0">
+                        <a href="javascript:void(0);" > 
+                        	<%=getMessage('WIZARD_WELCOME_MESSAGE')%>
+                        	<i class=" icon-currentstep2"></i>
+                        	<i class="icon-check-circle completedstep"></i>
+                        </a>
+                    </li>
+                    
+                    <li class="wizard-step wizard-parent" step="2" startstep="1">
+                     	<a href="javascript:void(0);" > 
+	                        <%=getMessage('WIZARD_WELCOME_SETUP_MESSAGE')%>
+	                        <i class="icon-check-circle completedstep"></i>
+	                        <i class="icon-currentstep2"></i>
+                        </a>
+                        
+                        <ul class="child">
+		                    <li id="wizard_companyprofile" step="1">
+		                    	 <a href="javascript:void(0);" > 
+			                        <%=getMessage('WIZARD_WELCOME_COMPANY_PROFILE')%>
+			                        <i class="icon-check-circle completedstep"></i>
+		                        </a>
+		                    </li>
+		                    <li class="active-sub-step" id="wizard_addusers" step="2">
+		                    	 <a href="javascript:void(0);" > 
+			                        <%=getMessage('WIZARD_WELCOME_ADD_USERS')%>
+			                        <i class="icon-check-circle completedstep"></i>
+		                        </a>
+		                    </li>
+                       </ul>
+                    </li>
+                                        
+                    
+                    <li class="wizard-step wizard-parent programstep" step="7" startstep="3">
+                    	 <a href="javascript:void(0);" > 
+	                        <%=getMessage('WIZARD_WELCOME_YOUR_PROGRAM')%>
+	                        <i class="icon-check-circle completedstep"></i>
+	                        <i class="icon-currentstep2"></i>
+                        </a>
+                        
+                        <ul class="child">
+		                    <li class="active-sub-step" id="wizard_customergraph" step="3">
+		                    	 <a href="javascript:void(0);" > 
+			                        <%=getMessage('WIZARD_WELCOME_OVERVIEW')%>
+			                        <i class="icon-check-circle completedstep"></i>
+		                        </a>
+		                    </li>
+		                    <li class="" id="wizard_touchpoints" step="4">
+		                     	<a href="javascript:void(0);" > 
+			                        <%=getMessage('WIZARD_WELCOME_TOUCHPOINTS')%>
+			                        <i class="icon-check-circle completedstep"></i>
+		                        </a>
+		                    </li>
+		                    <li class="" id="wizard_listeningposts" step="5">
+		                    	 <a href="javascript:void(0);" > 
+			                        <%=getMessage('WIZARD_WELCOME_LISTENINGPOSTS')%>
+			                        <i class="icon-check-circle completedstep"></i>
+		                        </a>
+		                    </li>
+		                    <li class="notselectable" id="wizard_survey" step="6">
+		                    	 <a href="javascript:void(0);" > 
+			                        <em><%=getMessage('WIZARD_WELCOME_CREATE_IMPORT_SURVEY')%></em>
+			                        <i class="icon-check-circle completedstep"></i>
+		                        </a>
+		                    </li>
+		                    <li class="" id="wizard_programpriview" step="7">
+		                    	 <a href="javascript:void(0);" > 
+			                        <%=getMessage('WIZARD_WELCOME_PROGRAM_PREVIEW')%>
+			                        <i class="icon-check-circle completedstep"></i>
+		                        </a>
+		                    </li>
+		                </ul>
+                    </li>
+                    <%}%>
+                    
+                    <li class="wizard-step wizard-parent" step="9" startstep="8">
+                    	 <a href="javascript:void(0);" > 
+	                        <%=getMessage('WIZARD_WELCOME_ANALYTICS')%>
+	                        <i class="icon-check-circle completedstep"></i>
+	                        <i class="icon-currentstep2"></i>
+                        </a>
+                        <ul class="child">
+		                    <li class="active-sub-step" id="wizard_learnanalytics" step="8">
+		                    	 <a href="javascript:void(0);" > 
+			                        <%=getMessage('WIZARD_WELCOME_LEARN_HOW')%>
+			                        <i class="icon-check-circle completedstep"></i>
+		                        </a>
+		                    </li>
+		                    <li id="wizard_exploreanalytics" step="9">
+		                        <a href="javascript:void(0);" > 
+			                        <%=getMessage('WIZARD_WELCOME_EXPLORE')%>
+			                        <i class="icon-check-circle completedstep"></i>
+		                        </a>
+		                    </li>
+		                </ul>
+                    </li>
+                </ul>
+                
+                <div class="processing-box">
+                    <div class="processing-box-cion">
+                        <i class="icon-product-release-1"></i>
+                    </div>
+                    <div class="processing-bar" id="wizard_progressbar">
+                        <div class="processing-bar-completed"></div>
+                    </div>
+                    <div class="processing-bar-label"><%=getMessage('WIZARD_WELCOME_FUEL_YOUR_PROGRAM')%></div>
+                </div>
+                
+                
+                <div class="processing-close">
+                    <div class="processing-close-btn">
+                        <a href="javascript:void(0);" class="closewizard btn btn-primary"><%=getMessage('WIZARD_WELCOME_CLOSE')%></a>
+                    </div>
+                    <!-- <div class="processing-close-label">
+                        You can always return to this mode by clicking the rocket.
+                    </div> -->
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+    
+    
+    <div class="right-panel column no-padding">
+    	
+    	<div class="header10-container header10-quick-links clearfix" id="wizard-header">
+            	<!-- <a href="javascript:void(0);" onclick="javascript:WalkMeAPI.startWalkthruById(94085);" >Tour Tips</a> | <a href="javascript:void(0);" onclick="javascript:wizardHeaderLearnMoreClicked();">Learn More</a> </span> -->
+            	<a href="javascript:void(0);" onclick="javascript:wizardHeaderLearnMoreClicked();"><%=getMessage('WIZARD_WELCOME_LEARN_MORE')%></a> </span>
+       </div>
+            
+    	<!-- <div class="header10-container">
+        	<div class="header10-icon">
+            	<i class="icon-product-release-1"></i>
+            </div>
+            <div class="header10-title">
+            	Set Up Your Compnay Profile
+            </div>
+            <div class="header10-seperator">
+            	<div class="header10-seperator-inner"></div>
+            </div>
+            <div class="header10-short-description">
+            	Watch the video below to learn how to quickly get started with your Net Promoter Experience application.
+            </div>
+        </div>
+        <div class="contents10-container full-image">
+   	    	<img src="images/xpui/temp/welcome-to-satmetrix.jpg"> 
+        </div> -->
+        
+        
+        <div class="no-padding" id="wizard-stepcontent">
+        
+        </div>
+        
+        <div class="contents10-paging"  id="wizard-footer">
+        	<div class="contents10-paging-btn pull-left text-right">
+            	<a href="javascript:void(0);" class="wizard-buttons text-right" id="wizard-previousbutton">
+                <i class="icon-arrowthin-left left"></i> <%=getMessage('WIZARD_WELCOME_PREVIOUS_BTN')%></a>
+          	</div>
+            <div class="contents10-paging-btn pull-right">
+            	<a href="javascript:void(0);" class="wizard-buttons text-left" id="wizard-nextbutton"><%=getMessage('WIZARD_WELCOME_NEXT_BTN')%> <i class="icon-arrowthin-right right"></i></a>
+            </div>
+      </div>
+  </div>
+  
+  
+<!-- </div> -->

@@ -1,0 +1,234 @@
+<div class="header10-container clearfix text-center">
+	<div class="header10-title inline-title">
+		<i class="icon-setup-listening"></i> <%=getMessage('WIZARD_LISTENINGPOST_SETUP_LP')%>
+	</div>
+	
+	<div class="header10-short-description stepheader stepheader0 clearfix">
+		<%=getMessage('WIZARD_LISTENINGPOST_INTRO_LP')%>
+	</div>
+	
+	<div class="header10-short-description stepheader stepheader1 clearfix">
+		<%=getMessage('WIZARD_LISTENINGPOST_CUST_PROGRAM_LP')%> 
+	</div>
+</div>
+
+<div class="contents10-container full-image clearfix">
+	<div class="well-lg" id="listeningpost">
+	<!-- <form id="listeningpost" novalidate="novalidate"> -->
+		<div id="bootstrap-wizard-1" class="col-sm-12 no-padding wizard-style2">
+			<div class="form-bootstrapWizard">
+				<ul class="bootstrapWizard form-wizard tabheader">
+					<li class="active" data-target="#stepcontent0" style="width:50%">
+						<a href="javascript:void(0);" data-toggle="tab" step="0"> <span class="step">1</span> <span class="title"><%=getMessage('WIZARD_LISTENINGPOST_HOWTO_COLLECT_DATA')%></span> </a>
+					</li>
+					<li data-target="#stepcontent1" style="width:50%">
+						<a id="survey-btn-2" href="javascript:void(0)" data-toggle="tab"  step="1"> <span class="step">2</span> <span class="title"><%=getMessage('WIZARD_LISTENINGPOST_SELECT_LP')%></span> </a>
+					</li>
+				</ul>
+				<div class="clearfix"></div>
+			</div>
+			
+			<div class="tab-content top-padding-60">
+				<div class="tab-pane active" id="stepcontent0">
+					<div class="col-xs-3 ">
+					</div>
+					<div class="col-xs-6 surveycreationtype">
+						<div class="field">
+							<div class="smart-form checkbox-style3">
+								<label class="radio">
+									<input type="radio" name="radio" id="surveybytemplete" value="survey" checked="checked"><i></i>
+									<strong><%=getMessage('WIZARD_LISTENINGPOST_SENDOUT_SURVEY')%></strong><br/>
+									<%=getMessage('WIZARD_LISTENINGPOST_SURVEY_TEMPLATE')%>
+								</label>
+							</div>
+						</div>
+						<div class="field">
+							<div class="smart-form checkbox-style3">
+								<label class="radio ">
+									<input id="surveybyimport" type="radio" name="radio" value="import" ><i></i>
+									<strong><%=getMessage('WIZARD_LISTENINGPOST_IMPORT')%></strong><br/>
+									<%=getMessage('WIZARD_LISTENINGPOST_IMPORT_DATA')%>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-3">
+					</div>
+				</div>
+				
+				<div class="tab-pane active" id="stepcontent1">
+					<div class="col-xs-12 col-md-12">
+						<div class="controlar-col1">
+						  <div id="program_channels">
+							<div class="box-12-row-box clearfix">
+								<div class="box-12-row-label box-12-row-border">
+									<%=getMessage('WIZARD_LISTENINGPOST_TOUCHPOINT_TOOLTIP')%>
+								</div>
+								<div class="box-12-row-label">
+									<%=getMessage('WIZARD_LISTENINGPOST_DATA_CHANNEL_TOOLTIP')%>
+								</div>
+							</div>
+							
+							<!-- <div class="padding-10-box-10">
+								<div class="box-12 box-12-2 dak-gray-bg">
+									<div class="box-12-icon">
+										<i class="icon-relationship-graph-1"></i>
+									</div>
+									<div class="box-12-label-1">
+										Relationship
+									</div>
+									<div class="box-12-label-2">
+										1 Survey
+									</div>
+								</div>
+							</div>
+							
+							<div class="padding-10-box-10">
+								<div class="box-12 box-12-2 dak-gray-bg">
+									<div class="box-12-icon">
+										<i class="icon-touchpoint-3"></i>
+									</div>
+									<div class="box-12-label-1">
+										Transaction
+									</div>
+									<div class="box-12-label-2">
+										5 Surveys
+									</div>
+								</div>
+							</div> -->
+							
+						  </div>
+						  
+						</div>
+						
+						<div class="controlar-col2" id="program-channeltouchpoint-ctr">
+						  <div id="" class="controlar-carousel">
+							<table  id="channel-touchpoints-ctr" cellpadding="0" cellspacing="0" style="">
+							  <tbody>
+							  <tr>
+								<td>
+									<table id="program-touchpoints-ctr" cellpadding="0" cellspacing="0">
+										<tbody>
+										<!-- <tr class="program_table_row_2">
+										  <th class="controlar-carousel-column">
+											   <i class="icon-touchpoint-3"></i> Purchase
+										  </th>
+										  <th class="controlar-carousel-column">
+											<i class="icon-touchpoint-3"></i> Installation
+										  </th>
+										  <th class="controlar-carousel-column">
+											<i class="icon-touchpoint-3"></i> Setup & Training
+										  </th>
+										  <th class="controlar-carousel-column ">
+											<i class="icon-touchpoint-3"></i> Usage
+										  </th>
+										  <th class="controlar-carousel-column">
+											<i class="icon-touchpoint-3"></i> Support
+										  </th>
+										</tr> -->
+										<!-- <tr class="single-survey-tab-row">
+										  <td class="controlar-carousel-column" colspan="5">
+												<div class="box-12 box-12-2 light-blue">
+													<div class="box-12-icon-2">
+														<div class="smart-form radiobox-style3">
+															<label class="radiobox">
+																<input type="radio" checked="checked"><i></i>
+															</label>
+														</div>
+													</div>
+													<div class="box-12-label-1">
+														Relationship Survey
+													</div>
+												</div>
+										  </td>
+										</tr> -->
+										
+										<!-- <tr class="">
+											<td class="">
+												<div class="box-12 box-12-white">
+													<div class="box-12-icon-2">
+														<div class="smart-form radiobox-style3">
+															<label class="radiobox">
+																<input name="transaction-btn" type="radio"><i></i>
+															</label>
+														</div>
+													</div>
+													<div class="box-12-label-1">
+														Relationship Survey
+													</div>
+												</div>
+											</td>
+											<td class="controlar-carousel-column">
+												<div class="box-12 box-12-white">
+													<div class="box-12-icon-2">
+														<div class="smart-form radiobox-style3">
+															<label class="radiobox">
+																<input name="transaction-btn" type="radio"><i></i>
+															</label>
+														</div>
+													</div>
+													<div class="box-12-label-1">
+														Installation Survey
+													</div>
+												</div>
+											</td>
+											<td class="controlar-carousel-column">
+												<div class="box-12 box-12-white">
+													<div class="box-12-icon-2">
+														<div class="smart-form radiobox-style3">
+															<label class="radiobox">
+																<input name="transaction-btn" type="radio"><i></i>
+															</label>
+														</div>
+													</div>
+													<div class="box-12-label-1">
+														Setup & Training Survey
+													</div>
+												</div>
+											</td>
+											<td class="controlar-carousel-column">
+												<div class="box-12 box-12-white">
+													<div class="box-12-icon-2">
+														<div class="smart-form radiobox-style3">
+															<label class="radiobox">
+																<input name="transaction-btn" type="radio"><i></i>
+															</label>
+														</div>
+													</div>
+													<div class="box-12-label-1">
+														Usage Survey
+													</div>
+												</div>
+											</td>
+											<td class="controlar-carousel-column">
+												<div class="box-12 box-12-white">
+													<div class="box-12-icon-2">
+														<div class="smart-form radiobox-style3">
+															<label class="radiobox">
+																<input name="transaction-btn" type="radio"><i></i>
+															</label>
+														</div>
+													</div>
+													<div class="box-12-label-1">
+														Support Survey
+													</div>
+												</div>
+											</td>
+										</tr> -->
+									</tbody>
+									</table>
+									</td>
+								</tr>
+								</tbody>
+							</table>
+						  </div>
+						  <i id="left-program-icon" class="fa fa-chevron-left cursor" ></i> 
+						  <i id="right-program-icon" class="fa fa-chevron-right cursor" ></i> 
+					   </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- </form> -->
+	</div>
+</div>

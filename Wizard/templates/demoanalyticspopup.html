@@ -1,0 +1,41 @@
+    <div class="dialog-title no-margin hide exploreanalyticsheader">
+    	<%=getMessage('WIZARD_DEMOANALYTICS_SETUP_COMPLETE')%>
+    </div>
+    
+    <div class="dialog-title-2 hide exploreanalyticsheaderdesc">
+    	<%=getMessage('WIZARD_DEMOANALYTICS_SETUP_BIC_CEP')%>
+        <br>
+        <%=getMessage('WIZARD_DEMOANALYTICS_WHAT_LIKE_NEXT')%>
+    </div>
+    
+    <div class="dialog-row">
+    	<div class="dialog-col1">
+        	<div class="dialog-icon">
+            	<div class="dialog-icon-circle">
+            		<i class="icon-analytics-2"></i>
+                </div>
+            </div>
+            <div class="dialog-icon-label">
+            	<%=getMessage('WIZARD_DEMOANALYTICS_CANNOT_SHOW_NPX_DATA')%>
+            </div>
+            <div class="dialog-icon-btn">
+            	<a class="next_step_clos_btn gotostep" href="javascript:void(0);" id="liveanalytics" step="liveanalytics"><%=getMessage('WIZARD_DEMOANALYTICS_SEE_MY_REPORT')%></a>
+            </div>
+        </div>
+        <div class="dialog-col2">
+        	Or
+        </div>
+        <div class="dialog-col1">
+        	<div class="dialog-icon">
+            	<div class="dialog-icon-circle">
+            		<i class="icon-testdrive"></i>
+                </div>
+            </div>
+            <div class="dialog-icon-label">
+            	<%=getMessage('WIZARD_DEMOANALYTICS_TEST_DRIVE_REPORTS')%>
+            </div>
+            <div class="dialog-icon-btn">
+            	<a class="next_step_clos_btn gotostep" href="javascript:void(0);" id="demoanalytics" step="exploreanalytics"><%=getMessage('WIZARD_DEMOANALYTICS_TEST_ANALYTICS')%></a>
+            </div>
+        </div>
+    </div>
