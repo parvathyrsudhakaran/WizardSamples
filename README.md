@@ -1,2 +1,2 @@
 # WizardSamples
-Wizard Sample Code
+Wizard Sample
